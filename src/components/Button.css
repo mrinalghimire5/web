@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-top: 10px;
+
+}
+
+a{
+    text-decoration: none;
+}
+.custom-button {
+    background: #005EB8;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px; /* Space between buttons */
+    padding: 10px; /* Adjust padding as necessary */
+    transition: transform 0.2s ease-in-out;
+    
+  }
+  
+  .custom-button img {
+    width: 20px; /* Adjust based on your image's dimension */
+    height: auto;
+    margin-right: 10px; /* Space between the icon and the text */
+  }
+  
+  .button-icon {
+    font-size: 20px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between icon and text */
+    height: auto;
+    color: white;
+  }
+
+
+.button-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.available-on {
+    font-size: 14px; 
+    font-family: 'Ubuntu' , sans-serif;
+    color: #ffffff; 
+    margin-bottom: 10px;
+    
+}
+
+.play-store {
+    font-size: 16px; 
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+  
+    .popup {
+        position: absolute;
+        width: 200px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+        visibility: hidden;  /* Initially hide the popup */
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        bottom: 100%;        /* Positioning below the hover target */
+        left: 50%;
+        transform: translate(-50%, 10px); /* Center it and move it down a bit */
+      }
+
+}
+
+
+.custom-button:hover  {       /*Zoom in effect for button*/
+    transform: scale(1.1);
+
+}
+
